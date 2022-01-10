@@ -1,0 +1,1 @@
+let visualizerContainer = document.querySelector('.visualizer-container');
