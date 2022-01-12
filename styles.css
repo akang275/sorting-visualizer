@@ -1,4 +1,29 @@
+.root {
+    --spanish-viridian: #007f5fff;
+    --spanish-green: #2b9348ff;
+    --green-ryb: #55a630ff;
+    --apple-green: #80b918ff;
+    --android-green: #aacc00ff;
+    --bitter-lemon: #bfd200ff;
+    --pear: #d4d700ff;
+    --titanium-yellow: #dddf00ff;
+    --xanthic: #eeef20ff;
+    --maximum-yellow: #ffff3fff;
+}
+
 .bar {
     display: inline;
     background-color: black;
+}
+
+.visualizer-container {
+    height: 80vh;
+    width: 75vw;
+    margin: auto;
+}
+
+.header-container {
+    height: 15vh;
+    width: 100%;
+    background-color: var(--green-ryb);
 }
