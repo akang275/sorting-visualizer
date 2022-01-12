@@ -1,4 +1,4 @@
-.root {
+:root {
     --spanish-viridian: #007f5fff;
     --spanish-green: #2b9348ff;
     --green-ryb: #55a630ff;
@@ -12,13 +12,14 @@
 }
 
 .bar {
-    display: inline;
-    background-color: black;
+    background-color: var(--spanish-green);
+
 }
 
 .visualizer-container {
     height: 80vh;
     width: 75vw;
+    border: 2px solid;
     margin: auto;
 }
 
