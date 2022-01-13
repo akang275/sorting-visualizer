@@ -13,12 +13,14 @@
 
 .bar {
     background-color: var(--spanish-green);
-
 }
 
 .visualizer-container {
+    display: flex;
+    align-items: flex-end;
     height: 80vh;
     width: 75vw;
+    background-color: var(blue);
     border: 2px solid;
     margin: auto;
 }
