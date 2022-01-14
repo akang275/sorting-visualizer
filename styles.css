@@ -11,6 +11,15 @@
     --maximum-yellow: #ffff3fff;
 }
 
+* {
+    margin: 0;
+}
+
+body {
+    display: block-flex;
+    flex-direction: column;
+}
+
 .bar {
     background-color: var(--spanish-green);
 }
@@ -18,10 +27,10 @@
 .visualizer-container {
     display: flex;
     align-items: flex-end;
-    height: 80vh;
+    height: 85vh;
     width: 75vw;
     background-color: var(blue);
-    border: 2px solid;
+    /*border: 2px solid;*/
     margin: auto;
 }
 
