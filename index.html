@@ -9,12 +9,17 @@
 
 <body>
     <div class='header-container'>
-        <button type='randomize-array'>Randomize Array</button>
+        <button id='randomize-array-button'>Randomize Array</button>
         <span class='size-slider-container'>
             <label for='size-slider'>Array Size</label>
             <input type='range' id='size-slider' min='5' max='55' value='10'>
+            
         </span>
-        <button type='quick-sort'>Quick Sort</button>
+        <span class='speed-slider-container'>
+            <label for='speed-slider'>Sorting Speed</label>
+            <input type='range' id='speed-slider' min='1' max='500' value='250'>
+        </span>
+        <button id='selection-sort-button'>Selection Sort</button>
     </div>
     <div class='visualizer-container'>
     </div>
