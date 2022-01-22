@@ -69,12 +69,14 @@ function selectionSort() {
     let timer = 0;
     for (let i = 0; i < array.length; i++) {
         
-        if (i > 0) {timer += sortingSpeed * (array.length - i)};
+        if (i > 0) {timer += sortingSpeed * (array.length - i + 1)};
 
         setTimeout(function() {
             let minIndex = i;
+            barList[barList.length - 1].style.backgroundColor = ogColor;
             if (i > 0) {barList[i-1].style.backgroundColor = ogColor};
             barList[i].style.backgroundColor = focusColor;
+
             for (let j = i + 1; j < array.length; j++) {
                 setTimeout(function() {
                     if (j > i + 1) {barList[j-1].style.backgroundColor = ogColor};
@@ -89,7 +91,7 @@ function selectionSort() {
                         array[minIndex] = array[i];
                         array[i] = temp;
                     }
-                }, sortingSpeed * j);
+                }, sortingSpeed * (j - i));
             }
         }, timer);
     }
