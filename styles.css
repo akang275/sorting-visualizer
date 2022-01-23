@@ -18,6 +18,7 @@
 body {
     display: block-flex;
     flex-direction: column;
+    background-color: rgb(212, 255, 211);
 }
 
 .bar {
@@ -28,7 +29,7 @@ body {
     display: flex;
     align-items: flex-end;
     height: 85vh;
-    width: 75vw;
+    width: 60vw;
     background-color: var(blue);
     /*border: 2px solid;*/
     margin: auto;
@@ -37,5 +38,5 @@ body {
 .header-container {
     height: 15vh;
     width: 100%;
-    background-color: var(--green-ryb);
+    /*background-color: var(--green-ryb);*/
 }
