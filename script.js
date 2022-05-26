@@ -117,6 +117,10 @@ function selectionSort() {
     }
 }
 
+function mergeSort() {
+    
+}
+
 speedSlider.addEventListener('input', updateSpeed);
 sizeSlider.addEventListener('input', function() {
     updateSize();
