@@ -1,7 +1,8 @@
 //console.log(JSON.parse(JSON.stringify(obj)));
 
 let visualizerContainer = document.querySelector('.visualizer-container');
-let selectionSortButton = document.querySelector('#selection-sort-button');
+let selectionSortButton = document.querySelector('.selection.sort-button');
+let mergeSortButton = document.querySelector('.merge.sort-button');
 let randomizeArrayButton = document.querySelector('#randomize-array-button');
 let speedSlider = document.querySelector('#speed-slider');
 let sizeSlider = document.querySelector('#size-slider');
@@ -117,9 +118,12 @@ function selectionSort() {
     }
 }
 
-function mergeSort() {
+mergeSort() {
     
 }
+
+selectionSortButton.addEventListener('click', selectionSort);
+mergeSortButton.addEventListener('click', mergeSort);
 
 speedSlider.addEventListener('input', updateSpeed);
 sizeSlider.addEventListener('input', function() {
@@ -128,8 +132,6 @@ sizeSlider.addEventListener('input', function() {
 });
 
 stopButton.addEventListener('click', stopSorting);
-
-selectionSortButton.addEventListener('click', selectionSort);
 
 randomizeArrayButton.addEventListener('click', function() {
     stopSorting();
